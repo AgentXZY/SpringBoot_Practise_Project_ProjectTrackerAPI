@@ -11,7 +11,7 @@ import org.springframework.web.server.ResponseStatusException;
 @Service
 public class ProjectService {
 	
-	private int count = 2; //----> SET TO 2 AS WE ALREADY DECALRED 2 SAMPLE TUPULES
+	private Long count = 2L; //----> SET TO 2 AS WE ALREADY DECALRED 2 SAMPLE TUPULES
 	private List<Project> projects = new ArrayList<>();
 	
 	public ProjectService(){

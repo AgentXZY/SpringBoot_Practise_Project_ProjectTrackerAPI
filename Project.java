@@ -8,14 +8,14 @@ public class Project {
 	private Long id;
 	private String name;
 	private String description;
-	@JsonFormat(pattern = "yyyy-MM-dd")
+//	@JsonFormat(pattern = "yyyy-MM-dd")
 	private LocalDate deadline;
 	private Status status;
 	
 	public Project() {
 	}
 	
-	public Project(long id, String name, String description, LocalDate deadline, Status status) {
+	public Project(Long id, String name, String description, LocalDate deadline, Status status) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -30,7 +30,7 @@ public class Project {
 				+ ", status=" + status + "]";
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	
@@ -50,7 +50,7 @@ public class Project {
 		this.status = status;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
